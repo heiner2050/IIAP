@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    padding-left: 200px;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+  
+  /* Estilos para la barra lateral */
+  .sidebar {
+    background-color:#184D21;
+    color: #fff;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .sidebar h1,
+  .sidebar h3 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .sidebar img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el menú */
+  .menu {
+    margin-top: 20px;
+  }
+  
+  .ulmenu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .limenu {
+    margin-bottom: 10px;
+  }
+  
+  .limenu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .limenu a:hover {
+    background-color: black;
+  }
+  
+  /* Estilos para las rayas horizontales */
+  hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para la parte superior */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #184D21;
+    padding: 10px 20px;
+   
+  }
+  
+  .top-bar i.fa-search {
+    font-size: 30px;
+    color: #FFCC00;
+  }
+  
+  .top-bar span {
+    padding: 5px;
+    color: #FFCC00;
+  }
+  
+  .top-bar .user-info {
+    display: flex;
+    align-items: center;
+    color: aqua;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  /* Estilos para el contenido */
+  .container {
+    padding: 20px;
+    margin-left: 200px; /* Ajusta según tus necesidades */
+    margin-top: 60px;
+  }
+  .top-bar{
+    position: fixed; /* Cambio: posición fija */
+    top: 0; /* Cambio: posición superior */
+    left: 0; /* Cambio: posición izquierda */
+    width: 80%; /* Cambio: ancho al 100% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 10px 20px;
+    z-index: 1000; 
+   margin-left: 402PX;
+   
+  } 
+  
+  .content {
+    margin-left: 50px;
+  }
+  
+  .title h1 {
+    margin: 50px -140px;
+  }
+  
+  .title h1 span {
+    color: #999999;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 80px;
+    width: 100%;
+    margin-left: -140px;
+    
+  }
+  
+  .welcome-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome-text p {
+    font-size: 30px;
+    margin-left: 140px;
+    background-image: linear-gradient(to right, #ff9900, #ff0055);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: right;
+  }
+  
+  .welcome-text img {
+    margin-left: -100px;
+    margin-bottom: -30px;
+  }
+  
+  .category {
+    margin-top: 120px;
+    text-align: center;
+    margin-left: 120px;
+  }
+  
+  .category-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+  }
+  
+  .category-list li {
+    margin: 0 10px;
+    padding-left: 70px;
+    font-size: 25px;
+  }
+  
+  .category-list li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .selected-category {
+    position: absolute;
+    left: 50%;
+    margin-top: 90px;
+  }
+  
+  .selected-category h2 {
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -405px;
+    margin-right: -15px;
+    padding: 0 15px; /* Agregado: Espacio horizontal */
+  
+  }
+  
+  .card {
+    flex-basis: calc(50% - 30px);
+    margin-bottom: 20px;
+    margin-left: 5px; /* Ajusta según tus necesidades */
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+  }
+  
+  .card-inner {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  /* Estilos para el pie de página */
+  .footer {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    margin-left: 402px;
+  
+  }
+  
+  .footer-text {
+    margin-left: 600px;
+  }
+  .card-title {
+    font-size: 1.25rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .card-text:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 5px;
+  }
+  
+  .list-unstyled li a {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .list-unstyled li a i {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .content {
+    margin: 20px;
+  }
+  .title h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .title span {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .table-container {
+    margin-top: 20px;
+  }
+  .table {
+    margin-bottom: 20px;
+  }
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  .table th {
+    font-size: 16px;
+  }
+  .table td {
+    font-size: 14px;
+  }
+  .table button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .my-5 {
+    margin-top: 5rem; /* Espaciado hacia arriba */
+    margin-bottom: 5rem; /* Espaciado hacia abajo */
+  }

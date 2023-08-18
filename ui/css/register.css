@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-top: 5px;
+    color: #666;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #888;
+}
